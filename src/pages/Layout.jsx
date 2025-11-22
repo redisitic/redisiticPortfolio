@@ -6,13 +6,13 @@ import Footer from "../components/Footer";
 function Layout() {
   return (
     <>
-      <Navbar />
-      <div className="w-full">
-        <div className="container mx-auto">
+      {/* <Navbar /> */}
+      <div className="">
+        <div className="">
           <Outlet />
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

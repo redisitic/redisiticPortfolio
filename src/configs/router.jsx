@@ -14,22 +14,6 @@ const router=createBrowserRouter([
         ]
     },
     {
-        path:"/signup",
-        element:(
-            <>
-                <h1>Signup Page</h1>
-            </>
-        )
-    },
-    {
-        path:"/login",
-        element:(
-            <>
-                <h1>Login Page</h1>
-            </>
-        )
-    },
-    {
         path:"*",
         element:(
             <>
