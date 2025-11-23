@@ -40,12 +40,3 @@ jobs:
 
           aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET }}/index.html \
             --cache-control "no-cache,no-store,must-revalidate"
-
-      - name: Invalidate CloudFront cache
-        uses: chetan/invalidate-cloudfront-action@v2
-        with:
-          distribution: ${{ secrets.CLOUDFRONT_DIST_ID }}
-          paths: "/*"
-          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          region: ${{ secrets.AWS_REGION }}
